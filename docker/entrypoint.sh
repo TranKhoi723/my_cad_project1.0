@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Dòng này đảm bảo script sẽ thoát ngay lập tức nếu có bất kỳ lệnh nào thất bại
+# This line ensures the script will exit immediately if any command fails
 set -e
 
-# "exec" sẽ thay thế tiến trình của script này bằng lệnh được truyền vào.
-# "$@" là một biến đặc biệt trong bash, đại diện cho TẤT CẢ các tham số
-# được truyền vào script (ví dụ: "freecadcmd", "/app/scripts/pipeline.py").
+# "exec" will replace the process of this script with the command passed to it.
+# "$@" is a special variable in bash, representing ALL parameters
+# passed to the script (e.g., "freecadcmd", "/app/scripts/pipeline.py").
 exec "$@"

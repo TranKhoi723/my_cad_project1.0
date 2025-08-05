@@ -1,11 +1,11 @@
-# Môi trường ảo Python
+# Python virtual environments
 .venv/
 venv/
 
-# Cache
+# Python cache directories
 __pycache__/
 
-# Các file output không cần lưu
+# Output files and directories that are not needed in the Docker image
 output/
 data/
 *.svg
